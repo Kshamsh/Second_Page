@@ -1,39 +1,123 @@
-body{
-    background-image:
-    linear-gradient( 115deg, rgba(58, 58, 158, 0.8),
-     rgba(136, 136, 206, 0.7) ),
-     url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
-     
-     width: 100%;
-     height: 100%;
-     color: white;
-     margin: 0 ;
-}
-.selected-option{
-    
-}
-.wrapper{
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background-image: linear-gradient(
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .forms-container {
+    margin: 0 auto;
+    background-color: rgba(27, 27, 50, 0.8);
+    height: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 650px;
+  }
+  .personDetails {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.content-box{
-    background-color: rgba(0, 0, 0, 0.384);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 700px;
-    
-}
-.checks{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     width: 100%;
-}
+    margin-bottom: 17px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .header,
+  .headParagraph {
+    display: flex;
+    justify-content: center;
+  }
+  .Button {
+    height: 50px;
+    background-color: rgb(68, 179, 68);
+    color: white;
+    width: 100%;
+  }
+  input {
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+  }
+.text-area {
+    width: 100%;
+    resize: none;
+  }
+.select-form {
+    height: 37px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+  }
+.check-text {
+    display: flex;
+    align-items: center;
+  }
+  @media(max-width:767px){
+    .forms-container {
+        margin: 0 auto;
+        background-color: rgba(27, 27, 50, 0.8);
+        height: 100%;
+        padding: 30px;
+        border-radius: 5px;
+        font-size: 20px;
+        width: 497px;
+      }
+  }
+  @media(max-width:575px){
+    body{
+        margin: 0 auto;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .forms-container {
+        margin: 0 auto;
+        background-color: rgba(27, 27, 50, 0.8);
+        height: 100%;
+        padding-left: 30px;
+        border-radius: 5px;
+        font-size: 20px;
+        width: 100%;
+      }
+      .personDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        margin-bottom:17px;
+        
+        
+      }
+      .text-area {
+        width: 85%;
+        resize: none;
+      }
+      .Button {
+        height: 50px;
+        background-color: rgb(68, 179, 68);
+        color: white;
+        width: 85%;
+    }
+    .select-form {
+            height: 37px;
+            border-radius: 5px;
+            width: 85%;
+            font-size: 15px;
+          }
+  }
